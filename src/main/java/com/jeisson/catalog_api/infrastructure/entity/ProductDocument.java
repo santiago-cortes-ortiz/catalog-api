@@ -58,7 +58,7 @@ public class ProductDocument {
     }
 
 
-    public static ProductDocument fromDomain(com.jeisson.catalog_api.domain.entity.Product product) {
+    public static ProductDocument fromDomain(Product product) {
         return ProductDocument.builder()
                 .id(product.getId())
                 .name(product.getName())
